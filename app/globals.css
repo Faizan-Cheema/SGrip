@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .font-satoshi {
+    font-family: 'Satoshi', sans-serif;
+  }
+}
+
+/* Footer form input styles - maintain background and text color */
+input[style*="background-color: #514F4F"],
+textarea[style*="background-color: #514F4F"] {
+  background-color: #514F4F !important;
+  color: #ffffff !important;
+}
+
+input[style*="background-color: #514F4F"]:focus,
+textarea[style*="background-color: #514F4F"]:focus {
+  background-color: #514F4F !important;
+  color: #ffffff !important;
+}
+
+input[style*="background-color: #514F4F"]:-webkit-autofill,
+input[style*="background-color: #514F4F"]:-webkit-autofill:hover,
+input[style*="background-color: #514F4F"]:-webkit-autofill:focus,
+textarea[style*="background-color: #514F4F"]:-webkit-autofill,
+textarea[style*="background-color: #514F4F"]:-webkit-autofill:hover,
+textarea[style*="background-color: #514F4F"]:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #514F4F inset !important;
+  box-shadow: 0 0 0px 1000px #514F4F inset !important;
+  background-color: #514F4F !important;
+  color: #ffffff !important;
+}
