@@ -28,7 +28,7 @@ export default function ContactUs() {
                                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black mb-3 sm:mb-4 md:mb-6">Contact us</h1>
                                 <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed">
                                     Get in touch for inquiries or support.<br />
-                                    We're here to help!
+                                    We&apos;re here to help!
                                 </p>
                             </div>
 
